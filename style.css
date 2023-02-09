@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px, 0;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}a:hover{
+    opacity: 0.5;
+}
+
+p {
+    text-align: justify;
+    max-width: 450px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.container {
+    height: 675px;
+    padding: 20px;
+    display: flex;
+}
+
+.inner-content {
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-basis: 100px;
+    flex-grow: 1;
+
+}
+
+.inner-content:nth-child(1){
+    border-right: 1px solid rgba(128, 128, 128, 0.2);
+    align-items:end;    
+}
+
+.inner-content:nth-child(2) {
+    align-items:start;
+    flex-grow:2;
+}
+
+.footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name, .occupation {
+    margin: 0px;
+    padding: 0px;
+}
+
+.email-link {
+    font-size: 0.75rem;
+    margin: 1px;
+    padding: 0px;
+    color: blue;
+}
+
+.skill-table {
+    width: 100%;
+    max-width: 600px;
+
+}
+
+table, tr, td {
+    padding: 0px 50px 0px 0px;
+}
+
+.interests {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .inner-content {
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        flex-basis: 100px;
+        flex-grow: 1;
+    
+    }
+    .inner-content:nth-child(1) {
+        border-right: 1px solid white;
+        max-height: 100px;
+        align-items:center;
+    }
+    .inner-content:nth-child(2) {
+        max-width: 450px;
+        align-items:center;
+    }
+}
